@@ -24,7 +24,7 @@ function checkInputs() {
 	}
 	
 	if(emailValue === '') {
-		setErrorFor(email, 'Email-ID cannot be blank');
+		setErrorFor(email, 'Email cannot be blank');
 	} else if (!isEmail(emailValue)) {
 		setErrorFor(email, 'Not a valid email');
 	} else {
@@ -32,7 +32,7 @@ function checkInputs() {
 	}
 	
 	if(passwordValue === '') {
-		setErrorFor(password, 'Password1 cannot be blank');
+		setErrorFor(password, 'Password cannot be blank');
 	} else {
 		setSuccessFor(password);
 	}
